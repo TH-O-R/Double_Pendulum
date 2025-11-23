@@ -9,10 +9,10 @@
 
 
 typedef struct {
-SDL_Window *win;
-SDL_Renderer *ren;
-TTF_Font *font;
-int width, height;
+    SDL_Window *win;
+    SDL_Renderer *ren;
+    TTF_Font *font;
+    int width, height;
 } AppRender;
 
 

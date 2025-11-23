@@ -6,11 +6,11 @@
 
 
 typedef struct {
-int max_points;
-int count;
-int head;
-float *xs; // size max_points
-float *ys; // size max_points
+    int max_points;
+    int count;
+    int head;
+    float *xs; // size max_points
+    float *ys; // size max_points
 } Trail;
 
 

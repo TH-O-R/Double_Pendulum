@@ -6,11 +6,11 @@
 
 
 typedef struct {
-double m1, m2;
-double l1, l2;
-double theta1, theta2;
-double omega1, omega2;
-double damping; // small damping factor
+    double m1, m2;
+    double l1, l2;
+    double theta1, theta2;
+    double omega1, omega2;
+    double damping; // small damping factor
 } Pendulum;
 
 

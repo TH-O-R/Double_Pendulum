@@ -6,21 +6,21 @@
 Trail *trail_create(int max_points) {
     if (max_points <= 0) return NULL;
         
-        Trail *t = (Trail*)malloc(sizeof(Trail));
-        if (!t) return NULL;
-        
-        t->xs = (float*)malloc(sizeof(float) * max_points);
-        if (!t->xs) {
-            free(t);
-            return NULL;
-        }
-        
-        t->ys = (float*)malloc(sizeof(float) * max_points);
-        if (!t->ys) {
-            free(t->xs);
-            free(t);
-            return NULL;
-        }
+    Trail *t = (Trail*)malloc(sizeof(Trail));
+    if (!t) return NULL;
+    
+    t->xs = (float*)malloc(sizeof(float) * max_points);
+    if (!t->xs) {
+        free(t);
+        return NULL;
+    }
+    
+    t->ys = (float*)malloc(sizeof(float) * max_points);
+    if (!t->ys) {
+        free(t->xs);
+        free(t);
+        return NULL;
+    }
     t->max_points = max_points;
     t->count = 0;
     t->head = 0;
