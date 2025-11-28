@@ -84,7 +84,7 @@ static void draw_glow_point(SDL_Renderer *ren, int x, int y, int maxr, SDL_Color
     SDL_GetRenderDrawBlendMode(ren, &prev);
     SDL_SetRenderDrawBlendMode(ren, SDL_BLENDMODE_ADD);
 
-    for (int r = maxr; r > 0; r -= 3) {
+    for (float r = maxr; r > 0; r -= 1.4) {
         float a = (float)r / (float)maxr; /* 1.0 -> 0.0 */
         SDL_SetRenderDrawColor(ren, color.r, color.g, color.b, (Uint8)(a * 120));
         filled_circle(ren, x, y, r);
